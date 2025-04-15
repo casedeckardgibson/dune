@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spice Colonization: Dune</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="instruct">
+    <h1>📜 Mission Briefing</h1>
+    <h3>Your goal is to establish a sustainable spice operation on Arrakis</h3>
+    <ul>
+      <li>Manage your workers, spice, happiness, and pollution</li>
+      <li>Complete missions from iconic Dune characters</li>
+      <li>Choose your destiny at the end...</li>
+    </ul>
+  </div>
+
+  <div id="gameContainer">
+    <div id="gameBoard"></div>
+
+    <div id="missionPanel">
+      <h3>📜 Mission Objective</h3>
+      <p id="missionText">Loading mission...</p>
+      <img id="missionPortrait" src="" style="display: none;" />
+      <video id="missionVideo" style="display: none;" autoplay muted></video>
+    </div>
+
+    <div id="controls">
+      <div id="timeBarContainer">
+        <div id="timeBar"></div>
+      </div>
+
+      <div>
+        <button id="placeHouse">Sietch</button>
+        <button id="placeFactory">Spice Harvester</button>
+        <button id="placePark">Wind Trap</button>
+        <button onclick="location.reload();" id="restart">Restart</button>
+      </div>
+
+      <div id="info">
+        <p>🌶️ Spice: <span id="money">1000</span></p>
+        <p>😊 Happiness: <span id="happiness">100</span></p>
+        <p>☠️ Pollution: <span id="pollution">0</span></p>
+        <p>👷 Workers: <span id="workers">20</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="messagePopup" class="hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
